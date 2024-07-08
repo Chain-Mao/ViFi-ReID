@@ -1,20 +1,19 @@
-# WiFi-Person-ReID
+# ViFi-ReID
 
-<b>Time-Frequency Analysis of Variable-Length WiFi CSI Signals for Person Re-Identification</b>
+<b>ViFi-ReID: A Two-Stream Vision-WiFi Multimodal Approach for Person Re-identification</b>
 
-This repository contains the official python implementation for our paper "Time-Frequency Analysis of Variable-Length WiFi CSI Signals for Person Re-Identification, Chen Mao". 
+This repository contains the official python implementation for our paper "ViFi-ReID: A Two-Stream Vision-WiFi Multimodal Approach for Person Re-identification, Chen Mao". 
 Our paper are available at [here](https://arxiv.org/abs/2406.01906).
 
-<div align="center"><img src="wifi_scene.png"  width="60%"/></div>
+<div align="center"><img src="room.png"  width="60%"/></div>
 
 ## Introduction
 
-Person re-identification (ReID), as a crucial technology in the field of security, plays an important role in security detection and people counting. Current security and monitoring systems largely rely on visual information, which may infringe on personal privacy and be susceptible to interference from pedestrian appearances and clothing in certain scenarios. Meanwhile, the widespread use of routers offers new possibilities for ReID. 
+Person re-identification (ReID) emerges as a crucial technology within the security domain, playing an indispensable role in safety detection and personnel counting among others. Present ReID schemes primarily rely on extracting features from images, rendering them vulnerable to disruptions by objective factors such as appearance, clothing, and occlusions. Integrating data from multiple sensors and exploring the correlation of heterogeneous data can effectively expand the perceptual range and enhance the accuracy of ReID. Beyond cameras, we utilize commonly available routers as sensing devices, capturing pedestrian gait through the Channel State Information (CSI) from WiFi signals as a data source. 
 
-<div align="center"><img src="wifi_arch.png"  width="80%"/></div>
-<div align="center"><img src="csi_uniform.png"  width="60%"/></div>
+<div align="center"><img src="arch.png"  width="80%"/></div>
 
-This letter introduces a method using WiFi Channel State Information (CSI), leveraging the multipath propagation characteristics of WiFi signals as a basis for distinguishing different pedestrian features. We propose a two-stream network structure capable of processing variable-length data, which analyzes the amplitude in the time domain and the phase in the frequency domain of WiFi signals, fuses time-frequency information through continuous lateral connections, and employs advanced objective functions for representation and metric learning. Tested on a dataset collected in the real world, our method achieves 93.68% mAP and 98.13% Rank-1.
+We employ a two-stream network to separately address video understanding and signal analysis tasks, conducting multimodal fusion on pedestrian video and WiFi data to generate comprehensive feature embeddings through advanced objective functions. Concurrently, the model employs contrastive learning to explore the correspondence between the two modalities, enabling cross-modal retrieval of disparate data types. Furthermore, we develop a challenging dataset comprising both videos and signals of persons. Extensive real-world experiments demonstrate that our approach outperforms state-of-the-art unimodal methods in multimodal settings and is capable of effectively bridging the gap between visual and signal modalities. It is applicable in both unimodal and multimodal contexts, thereby expanding the scope of ReID tasks.
 
 ## Cite
 Here is the bibtex to cite our arxiv paper, the Springer version will be cited after official publication.
