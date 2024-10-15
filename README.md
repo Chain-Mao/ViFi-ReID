@@ -3,7 +3,7 @@
 <b>ViFi-ReID: A Two-Stream Vision-WiFi Multimodal Approach for Person Re-identification</b>
 
 This repository contains the official python implementation for our paper "ViFi-ReID: A Two-Stream Vision-WiFi Multimodal Approach for Person Re-identification, Chen Mao". 
-Our paper are available at [here](https://arxiv.org/abs/2406.01906).
+Our paper are available at [here](https://arxiv.org/abs/2410.09875).
 
 <div align="center"><img src="room.png"  width="60%"/></div>
 
